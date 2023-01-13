@@ -2,14 +2,14 @@ import React from "react"
 
 //displays individual films info
 
-const ListingMovie = (props) => {
+const ListingMovie = ({title, synopsis}) => {
     return(
         <div className="col-12 justify-content-center align-items-center">
             
             
             <div>
-                <p>Film Title: {props.films.title}</p>
-                <p>Film Synopsis: {props.films.synopsis}</p>
+                <p>Film Title: {title}</p>
+                <p>Film Synopsis: {synopsis}</p>
             </div>
             
             
