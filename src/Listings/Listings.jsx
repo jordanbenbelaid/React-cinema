@@ -24,10 +24,10 @@ const Listings = () => {
             <div className="row">
                 {console.log({data})}
 
-                {Array.from(data).map(films => {
+                {data.films.map(film => {
                     return(
-                    <div className="col-4" key={films.id}> 
-                        <ListingMovie title={films.title} synopsis={films.synopsis}/>
+                    <div className="col-4" key={film.id}> 
+                        <ListingMovie title={film.title} synopsis={film.synopsis}/>
                         {/* <p>{filmsListing}</p> */}
                     </div>
                     )
